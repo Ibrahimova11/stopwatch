@@ -5,7 +5,7 @@ const reducer = (state, action) => {
         startBtn: true,
         stopBtn: false,
         resetBtn: false,
-        totalTime: ++state.totalTime,
+        totalTime: state.totalTime++,
       };
     case "SET_STOP":
       return {
